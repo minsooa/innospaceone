@@ -1,0 +1,194 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  ul,
+  li {
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+
+  .menu_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-content {
+    width: 848px;
+    margin: 0 auto;
+  }
+
+  .menu_wrap .dep1 {
+    font-size: 0px;
+    margin-top: 18px;
+    text-align: center;
+  }
+
+  .menu_wrap .dep1>li {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    font-size: 15px;
+    font-weight: meduim;
+  }
+
+  .menu_wrap .dep1>li:hover>.dep2 {
+    display: block;
+  }
+
+  .menu_wrap .dep2 {
+    display: none;
+  }
+
+  .menu_wrap .dep2 a {
+    display: block;
+    font-size: 12px;
+    font-weight: medium;
+    padding: 14px 0;
+  }
+
+  .menu_wrap .logo {
+    width: 100%;
+  }
+
+  /*********** 홈 ***********/
+  /* 기본 메뉴바 글자 색상 */
+  .menu_wrap .dep1>li>a {
+    color: black;
+    /* 기본 글자 색상 */
+  }
+
+  /* 홈화면일 때 메뉴바 글자 색상 변경 */
+  .home .menu_wrap .dep1>li>a {
+    color: #FFF;
+    /* 홈화면일 때 메뉴 글자 색상 */
+  }
+
+  /* 홈화면일 때 로고 색상 변경 */
+  .home .logo {
+    filter: brightness(0) invert(1);
+    /* 로고를 흰색으로 변환 */
+  }
+
+  /* 홈화면일 때 dep2 메뉴 글자 색상 변경 */
+  .home .menu_wrap .dep2 a {
+    color: white;
+    /* 홈화면일 때 dep2 메뉴 글자 색상 */
+  }
+
+  .menu_wrap .dep1>li:hover>a {
+    color: #a3a3a3;
+  }
+
+  .menu_wrap .dep2>li:hover>a {
+    color: #a3a3a3;
+  }
+
+  header {
+    background-image: url('https://images.pexels.com/photos/796206/pexels-photo-796206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    display: block;
+  }
+
+  .home-content p {
+    margin: 10px 0 30px;
+    color: #FFF;
+  }
+
+  .home-content {
+    text-align: center;
+    margin-top: 7%;
+    color: #FFF;
+  }
+
+  .page-title {
+    font-weight: bold;
+    font-size: 56px;
+  }
+
+  .new {
+    justify-content: center;
+    margin-top: 300px;
+    width: 100%;
+    /* 전체 너비 사용 */
+    display: flex;
+    /* Flexbox 사용 */
+  }
+
+
+  .new-text {
+    margin-left: 30px;
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .mars {
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+
+  .best {
+    text-align: center;
+    margin-top: 300px;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+  .best-item {
+    display: flex;
+    /* Flexbox 사용 */
+    justify-content: center;
+    /* 중앙 정렬 */
+    gap: 50px;
+    /* 이미지 간격 */
+    margin-top: 30px;
+    /* 상단 여백 추가 */
+    width: 100%;
+    /* 전체 너비 사용 */
+    margin-bottom: 40px;
+    /* 하단 여백 추가 */
+  }
+
+  /* best 이미지 스타일 */
+  .best-item a {
+    display: flex;
+    /* Flexbox로 각 이미지 링크를 중앙 정렬 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+  }
+
+  .best-item a img {
+    max-width: 100%;
+    /* 화면 너비에 맞게 최대 너비 설정 */
+    height: auto;
+    /* 비율에 맞게 높이 자동 조정 */
+    max-height: 150px;
+    /* 최대 높이 조정 */
+  }
+
+  footer {
+    margin-top: 300px;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    border-top: 1px solid #a3a3a3;
+    padding-top: 15px;
+    color: #a3a3a3;
+    font-size: 11px;
+  }
